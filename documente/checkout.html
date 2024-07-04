@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="assets\css\style_check.css">
+    <link rel="icon" href="assets\images\pastel.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel de Queijo</title>
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <a href="index.html">
+                <img src="assets\images\icon-pastel.png" alt="Logo" id="logo">
+            </a>
+        </div>
+        <div class="container-nav">
+            <nav>
+                <ul>
+                    <ol><a class="link-nav" href="index.html#info">Home</a></ol>
+                    <ol><a class="link-nav" href="index.html#cardapio">Lanches</a></ol>
+                    <ol><a class="link-nav" href="index.html#footer-div">Contatos</a></ol>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="info">
+        <div id="form-cont">
+            <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+            
+                <!--Número do whatsapp de quem recebe a mens. Empresa-->
+                <input type="hidden" name="phone" value="+5511934672509">
+
+                <!--Meng-->
+                <input type="hidden" name="mensagem" 
+                value="
+                Pedido de compra: %0A
+                Nome do Gordo: {{name}} %0A
+                Lanche de boa escolha: {{lancheName}} %0A
+                Endereço de entrega: {{endereco}} %0A
+                Forma de tributo: {{tributo}} %0A
+                Capivara é o melhor animal?: {{capivara}}
+                ">
+
+                <!--Nome do safado-->
+                    <label for="name"> Nome do Gordo: </label><br>
+                    <input type="text" id="name" name="name" required><br>
+                <!--Lanche de boa escolha-->
+                    <label for="lancheName"> Lanche de boa escolha: </label><br>
+                    <select name="lancheName" id="lancheName">
+                        <option value="Queijo">"Pastel de Queijo"</option>
+                        <option value="Carne">"Pastel de Carne"</option>
+                        <option value="Pizaa">"Pastel de Pizaa"</option>
+                        <option value="Com forma de CAPIVARA">"Pastel com FORMA DE CAPIVARA"</option>
+                    </select><br>
+                <!--Endereço de entrega-->
+                    <label for="endereco"> Endereço da entrega: </label><br>
+                    <input type="text" id="endereco" name="endereco" required><br>
+                <!--Forma de tributo-->
+                    <label for="tributo"> Forma de tributo: </label><br>
+                    <select name="tributo" id="tributo">
+                        <option value="PIX">PIX</option>
+                        <option value="CARTÃO">Cartão</option>
+                    </select><br/>
+                <!--Capivara é o melhor animal? Sim-->
+                    <label for="capivara">Capivara é o melhor animal?</label>
+                    <select name="capivara" id="capivara">
+                        <option value="SIM!!!!!">SIM!</option>
+                        <option value="LOGICO!!!!!!!!!!!!">LOGICO!</option>
+                    </select><br/>
+                <br/><br/>
+                
+                    <input class="btn_compra" type="submit" value="Fazer pedido"> </input>
+                    <br/><br/><br/><br/>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-div">
+            <div class="redes">
+                <img src="assets\images\instagram-logo.png" alt="Logo do Instagram" class="img-redes">
+                <p class="info-redes">@Capivara_Pasteis</p>
+            </div>
+            <div class="redes">
+                <img src="assets\images\Whatsapp-logo.png" alt="Logo do Whatsapp" class="img-redes">
+                <p class="info-redes">55 12 1234567890</p>
+            </div>
+            <div class="redes">
+                <img src="assets\images\x-logo.png" alt="Logo do X" class="img-redes">
+                <p class="info-redes">@Capivara_Pasteis</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets\js\script.js"></script>
+</body>
+</html>

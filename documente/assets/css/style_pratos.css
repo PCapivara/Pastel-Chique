@@ -1,0 +1,128 @@
+/* BODY & HEAD */
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f7eb45;
+
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color: aliceblue;
+}
+@media only screen and (max-width: 600px)
+{
+    h2{
+        margin: auto;
+        hyphens: auto;
+    }
+    .pratos{display: inline-block;
+
+    }}
+/*Parte do header*/
+header{
+    background-color: rgb(62, 248, 124);
+}
+.container-logo{
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    width: 10em;
+    justify-content: center;
+}
+
+.container-nav{
+    text-align: center;
+}
+nav{
+    background-color: rgb(51, 170, 83);
+    width: auto;
+    height: auto;
+}
+ul{
+    justify-content: center;
+}
+ol{
+    display: inline;
+    padding-inline-start: 0;
+    padding-inline-end: 2em;
+}
+.link-nav{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.7s;
+}
+.link-nav:hover{
+    color: #e3d401;
+    font-size: 1.5em;
+}
+
+/* Parte do Conteudo */
+
+.info{
+    background-color: #c0b302;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5em;
+}
+.lanche{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    height: 23em;
+}
+.img-lanche{
+    height: 20em;
+    border-radius: 3em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+#texto{
+    color: aliceblue;
+    font-size: 1.5em;
+}
+.butao-compra{
+    background-color: green;
+    font-size: 1.5em;
+    border: 5px double;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 0.5em;
+    color: aliceblue;
+}
+.butao-compra:hover{
+    font-size: calc(1.5em + 20%);
+    background-color: rgb(0, 205, 0);
+}
+/*Parte do footer*/
+footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3em;
+}
+#footer-div{
+    margin-left: 7.5%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    background-color: #c0b302;
+    width: 85%;
+    height: auto;
+}
+.redes{
+    display: inline-block;
+    margin-inline-start: 1em;
+}
+.img-redes{
+    width: 4em;
+    height: auto;
+    cursor: pointer;
+}
+.info-redes{
+    color: aliceblue;
+    cursor: pointer;
+}
