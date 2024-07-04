@@ -6,7 +6,7 @@ document.querySelector('.btn_compra').addEventListener('click', function() {
     const capivara = document.getElementById('capivara').value;
 
     const mensagem = `Pedido de compra:%0A
-      Nome do cliente: ${name}%0A
+      Nome do guloso: ${name}%0A
       Lanche escolhido: ${lancheName}%0A
       Endereço de entrega: ${endereco}%0A
       Forma de pagamento: ${tributo}%0A
